@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".user.registrationActivity">
+    <TextView
+        android:id="@+id/tvView"
+        android:layout_width="@dimen/auto_dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dp_80"
+        android:gravity="center"
+        android:text="Đăng ký"
+        android:textColor="@color/white"
+        android:textSize="@dimen/auto_dp_50"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="@dimen/auto_dp_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="@dimen/auto_dp_152"
+        app:layout_constraintEnd_toEndOf="@id/tvView"
+        app:layout_constraintStart_toStartOf="@+id/tvView"
+        app:layout_constraintTop_toBottomOf="@+id/tvView" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="@dimen/auto_dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_dp_16"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edEmail"
+        app:layout_constraintStart_toStartOf="@id/edEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/auto_dp_80"
+        app:layout_constraintEnd_toEndOf="@+id/edPassword"
+        app:layout_constraintStart_toStartOf="@+id/edPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edPassword">
+
+        <TextView
+
+            android:layout_marginLeft="@dimen/auto_dp_32"
+            android:id="@+id/btnDk"
+            android:layout_width="@dimen/auto_dp_160"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/auto_dp_32"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/auto_dp_16"
+            android:text="Đăng ký"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_marginLeft="@dimen/auto_dp_32"
+            android:id="@+id/btnThoat"
+            android:layout_width="@dimen/auto_dp_160"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="@dimen/auto_dp_32"
+            android:padding="@dimen/auto_dp_16"
+            android:text="Thoát"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

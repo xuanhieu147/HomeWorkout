@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_nutrition"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/onClickNutrition"
+        android:layout_width="@dimen/auto_dp_0"
+        android:layout_height="@dimen/auto_dp_0"
+        android:layout_margin="@dimen/auto_dp_10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onClickNutrition"
+        app:layout_constraintDimensionRatio="2:2"
+        app:cardCornerRadius="@dimen/auto_dp_20"
+        app:cardBackgroundColor="@color/black_18">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cropToPadding="true"
+                android:layout_gravity="center"
+                android:src="@drawable/hihih"
+                tools:src="@drawable/hihih"  />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/auto_dp_20">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/auto_dp_15"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+               >
+                <TextView
+                    android:id="@+id/tvText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:minWidth="@dimen/auto_dp_60"
+                    android:paddingTop="@dimen/auto_dp_10"
+                    android:text="@string/layout_item_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/auto_sp_20"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/progress_bar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/auto_dp_0"
+                    android:layout_height="@dimen/auto_dp_5"
+                    android:max="100"
+                    android:progressDrawable="@drawable/bg_progress_bar_white"
+                    app:layout_constraintBottom_toBottomOf="@id/tvText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/auto_dp_14"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/auto_dp_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dễ - Ngày 1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/auto_dp_14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/depositphotos_123359068">
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#8DC6C6C6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/auto_dp_2"
+        android:layout_marginTop="8dp"
+        android:background="@color/black_18"
+        app:layout_constraintEnd_toEndOf="@+id/tvMail"
+        app:layout_constraintStart_toStartOf="@+id/tvMail"
+        app:layout_constraintTop_toBottomOf="@+id/tvTwitter" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/auto_dp_2"
+        android:layout_marginTop="8dp"
+        android:background="@color/black_18"
+        app:layout_constraintEnd_toEndOf="@+id/tvMail"
+        app:layout_constraintStart_toStartOf="@+id/tvMail"
+        app:layout_constraintTop_toBottomOf="@+id/tvInstagram" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Đánh giá"
+        android:textColor="#181818"
+        android:textSize="@dimen/auto_dp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imgInstagram"
+        android:layout_width="@dimen/auto_dp_50"
+        android:layout_height="@dimen/auto_dp_50"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imgTwitter"
+        app:layout_constraintTop_toBottomOf="@+id/imgTwitter"
+        app:srcCompat="@drawable/inta" />
+
+    <TextView
+        android:id="@+id/tvInstagram"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Chia sẻ Instagram"
+        android:textColor="@color/black_18"
+        android:textSize="@dimen/auto_dp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/imgInstagram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgInstagram"
+        app:layout_constraintTop_toTopOf="@+id/imgInstagram" />
+
+    <TextView
+        android:id="@+id/tvTwitter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Chia sẻ Twitter"
+        android:textColor="@color/black_18"
+        android:textSize="@dimen/auto_dp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/imgTwitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgTwitter"
+        app:layout_constraintTop_toTopOf="@+id/imgTwitter" />
+
+    <ImageView
+        android:id="@+id/imgTwitter"
+        android:layout_width="@dimen/auto_dp_50"
+        android:layout_height="@dimen/auto_dp_50"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imgFacebook"
+        app:layout_constraintTop_toBottomOf="@+id/imgFacebook"
+        app:srcCompat="@drawable/twitter_app_icon" />
+
+    <ImageView
+        android:id="@+id/imgMail"
+        android:layout_width="@dimen/auto_dp_50"
+        android:layout_height="@dimen/auto_dp_50"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mail" />
+
+    <TextView
+        android:id="@+id/tvMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Gửi thông tin phản hồi"
+        android:textColor="@color/black_18"
+        android:textSize="@dimen/auto_dp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgMail"
+        app:layout_constraintTop_toTopOf="@+id/imgMail" />
+
+    <ImageView
+        android:id="@+id/imgFacebook"
+        android:layout_width="@dimen/auto_dp_50"
+        android:layout_height="@dimen/auto_dp_50"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/imgMail"
+        app:layout_constraintTop_toBottomOf="@+id/imgMail"
+        app:srcCompat="@drawable/logoface" />
+
+    <TextView
+        android:id="@+id/tvFacebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Chia sẻ FaceBook"
+        android:textColor="@color/black_18"
+        android:textSize="@dimen/auto_dp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFacebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFacebook"
+        app:layout_constraintTop_toTopOf="@+id/imgFacebook" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="@dimen/auto_dp_50"
+        android:layout_height="@dimen/auto_dp_50"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/imgInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/imgInstagram"
+        app:srcCompat="@drawable/danhgia" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/auto_dp_2"
+        android:layout_marginTop="8dp"
+        android:background="@color/black_18"
+        app:layout_constraintEnd_toEndOf="@+id/tvMail"
+        app:layout_constraintStart_toStartOf="@+id/tvMail"
+        app:layout_constraintTop_toBottomOf="@+id/tvMail" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/auto_dp_2"
+        android:layout_marginTop="8dp"
+        android:background="@color/black_18"
+        app:layout_constraintEnd_toEndOf="@+id/tvMail"
+        app:layout_constraintStart_toStartOf="@+id/tvMail"
+        app:layout_constraintTop_toBottomOf="@+id/tvFacebook" />
+</androidx.constraintlayout.widget.ConstraintLayout>

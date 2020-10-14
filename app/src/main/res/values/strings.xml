@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HomeWorkout</string>
+    <!-- Kind-->
+    <string name="king">Chọn giới tín</string>
+    <string name="king_nam">Nam</string>
+    <string name="king_nu">Nữ</string>
+
+    <!--    info-->
+    <string name="inf_title">Hồ sơ của tôi</string>
+    <string name="inf_height">Chiều cao</string>
+    <string name="inf_weight">Cân nặng</string>
+    <string name="action_settings">Settings</string>
+    <string name="inf_tuoi">Tuổi</string>
+
+    <string name="share">Chia Sẻ</string>
+    <string name="dd">Dinh Dưỡng</string>
+    <string name="exercise">Bài tập</string>
+    <string name="nav_drawer_open">Open navigation</string>
+    <string name="nav_drawer_close">Close navigation</string>
+    <string name="introduce">Ứng dụng tập gym tốt nhất năm 2018, và đến hiện nay nó vẫn giữ được chất lượng và ngày cật nhật thêm những tính năng mới cho ứng dụng. Ứng dụng tập gym tại nhà: Bài Thử Thách Thể Lực 30. Ngày này được thiết kế bởi một huấn luyện viên thể dục chuyên nghiệp và đã được khoa học chứng minh có thể giúp các bạn nâng cao thể lực và sức khỏe. Ngoài ra, ứng dụng này có thể đồng bộ dữ liệu về lượng KCAL bị đốt cháy trên Google Fit. Bạn sẽ thấy được sự thay đổi tuyệt vời khi kiên trì luyện tập theo các chương trình mà Bài tập thể lực 30 ngày đưa ra.
+</string>
+
+    <!--    fragment-->
+    <string name="frag_exercise">Thử thách của tôi</string>
+    <string name="event_type">Cơ Bụng</string>
+    <string name="layout_item_text">Tập tay</string>
+</resources>

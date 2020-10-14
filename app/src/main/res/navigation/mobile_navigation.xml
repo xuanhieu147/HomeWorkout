@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_exercise">
+    <fragment
+        android:id="@+id/nav_exercise"
+        android:name="com.poly.homeworkout.exercise.ExerciseFragment"
+        android:label="@string/exercise"
+        tools:layout="@layout/fragment_exercise" />
+    <fragment
+        android:id="@+id/nav_nutrition"
+        android:name="com.poly.homeworkout.nutrition.NutritionFragment"
+        android:label="@string/dd"
+        tools:layout="@layout/fragment_nutrition" />
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.poly.homeworkout.share.ShareFragment"
+        android:label="@string/share"
+        tools:layout="@layout/fragment_share" />
+<!--    <fragment-->
+<!--        android:id="@+id/nav_nutrition"-->
+<!--        android:name="com.poly.homeworkout.nutrition.NutritionFragment"-->
+<!--        android:label="@string/dd"-->
+<!--        tools:layout="@layout/fragment_nutrition" />-->
+
+
+</navigation>

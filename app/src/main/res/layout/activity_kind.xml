@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="nam"
+            type="android.view.View.OnClickListener" />
+        
+        
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context=".user.KindActivity">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/gym_3" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_dp_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/mo"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/auto_dp_16"
+            android:gravity="center_vertical"
+            android:text="@string/inf_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/auto_dp_48"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <LinearLayout
+                android:id="@+id/llinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgNam"
+                    android:layout_width="@dimen/auto_dp_80"
+                    android:layout_height="@dimen/auto_dp_80"
+                    android:background="@drawable/custom_img_user"
+                    android:padding="@dimen/auto_dp_16"
+                    android:src="@drawable/cau" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/auto_dp_5"
+                    android:text="@string/king_nam"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llinnern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/auto_dp_60"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/auto_dp_80"
+                    android:layout_height="@dimen/auto_dp_80"
+                    android:background="@drawable/custom_img_user"
+                    android:padding="@dimen/auto_dp_16"
+                    android:src="@drawable/woman" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/auto_dp_5"
+                    android:text="@string/king_nu"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/inf_height"
+                android:textColor="@color/white"
+                android:textSize="@dimen/auto_sp_26"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvHoSo"
+                app:layout_constraintStart_toStartOf="@+id/tvHoSo"
+                app:layout_constraintTop_toBottomOf="@+id/tvHoSo" />
+
+            <NumberPicker
+                android:id="@+id/numPick"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/auto_dp_70"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/tvHeight"
+                app:layout_constraintStart_toStartOf="@+id/tvHeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
+
+
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dp_5"
+                android:gravity="center"
+                android:text="@string/inf_weight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/auto_sp_26"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvHeight"
+                app:layout_constraintStart_toStartOf="@+id/tvHeight"
+                app:layout_constraintTop_toBottomOf="@+id/numPick" />
+
+            <NumberPicker
+                android:id="@+id/numPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/auto_dp_70"
+                app:layout_constraintEnd_toEndOf="@+id/tvWeight"
+                app:layout_constraintStart_toStartOf="@+id/tvWeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
+
+            <TextView
+                android:id="@+id/tvTuoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/auto_dp_5"
+                android:gravity="center"
+                android:text="@string/inf_tuoi"
+                android:textColor="@color/white"
+                android:textSize="@dimen/auto_sp_26"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tvHeight"
+                app:layout_constraintStart_toStartOf="@+id/tvHeight"
+                app:layout_constraintTop_toBottomOf="@+id/numPick" />
+
+            <NumberPicker
+                android:id="@+id/numPickeT"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/auto_dp_70"
+                app:layout_constraintEnd_toEndOf="@+id/tvWeight"
+                app:layout_constraintStart_toStartOf="@+id/tvWeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="@dimen/auto_dp_320"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:onClick="btnStart"
+            android:text="Lưu thông tin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/auto_dp_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
